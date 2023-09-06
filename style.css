@@ -1,11 +1,13 @@
 body{
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     background-color: white ;
 }
 
 
 .container-cust{
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,12 +17,14 @@ body{
 }
 
 .header{
+    width: max-content;
+    height: max-content;
     white-space: nowrap;
     font-size: 5.5rem;
     font-family: 'Josefin Sans', sans-serif;;
     color: white;
     background-color: darkblue;
-    width: 100%;
+    width: auto;
     text-align: center;
 }
 
@@ -63,3 +67,51 @@ body{
   font-size: 15rem;
   color: #36b922;
  }
+
+
+ @media(max-width:480px){
+
+  body{
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+  }
+
+  .container-cust{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 100px;
+    align-items: center;
+    background-color: darkblue;
+}
+
+.header{
+    white-space: nowrap;
+    font-size: 1rem;
+    font-family: 'Josefin Sans', sans-serif;;
+    color: white;
+    background-color: darkblue;
+    width: auto;
+    text-align: center;
+}
+
+.theT{
+
+  font-size: 3rem;
+}
+
+.game-button{
+  font-size: 1rem;
+  margin-top: 60%;
+}
+
+
+.header h1{
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+}
