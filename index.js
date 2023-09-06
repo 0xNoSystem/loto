@@ -6,7 +6,6 @@ audio.loop = true;
 audio.play();
 }
 
-document.querySelector("body").addEventListener("onload",main());
 
 
 
